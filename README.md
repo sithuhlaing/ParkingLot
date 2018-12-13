@@ -18,9 +18,16 @@ We interact with the system via a simple set of commands which produce a specifi
 
 ## Example: File
 To install all dependencies, compile and run tests:
+~~~~
 $ bin/setup
+~~~~
+
 To run the code so it accepts input from a file:
-$ bin/parking_lot file_inputs.txt
+	
+~~~~
+$ bin/parking_lot file_inputs.txt	
+~~~~
+
 Input (contents of file):
 create_parking_lot 6
 park KA-01-HH-1234 White
@@ -37,6 +44,9 @@ registration_numbers_for_cars_with_colour White
 slot_numbers_for_cars_with_colour White
 slot_number_for_registration_number KA-01-HH-3141
 slot_number_for_registration_number MH-04-AY-1111
+
+	
+~~~~
 Output (to STDOUT):
 Created a parking lot with 6 slots
 Allocated slot number: 1
@@ -57,7 +67,9 @@ Sorry, parking lot is full
 KA-01-HH-1234, KA-01-HH-9999, KA-01-P-333
 1, 2, 4
 6
-Not found
+Not found	
+~~~~
+
 Example: Interactive
 To install all dependencies, compile and run tests:
 $ bin/setup
